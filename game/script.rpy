@@ -1,4 +1,4 @@
-﻿# The script of the game goes in this file.
+# The script of the game goes in this file.
 
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
@@ -15,7 +15,7 @@ label splashscreen:
     scene black
     with Pause(1)
 
-    show text "Tibthink Studios Presents..." with dissolve
+    show text "Tibthink Productions Presents..." with dissolve
     with Pause(2)
 
     hide text with dissolve

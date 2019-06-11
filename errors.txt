@@ -2,9 +2,10 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 32: is not terminated with a newline. (Check strings and parenthesis.)
-(Perhaps you left out a " at the end of the first line.)
-        g "not today
+File "game/gui.rpy", line 14: unexpected indent
+        text with dissolve
+        ^
+    
 
 Ren'Py Version: Ren'Py 7.2.2.491
-Tue Jun 11 00:27:32 2019
+Tue Jun 11 09:35:46 2019

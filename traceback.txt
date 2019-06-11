@@ -1,82 +1,26 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-Exception: Backslash in filename, use '/' instead: u'\x0conts\\ComicSans.ttf'
+  File "game/splash.rpy", line 234, in script
+    #image tos = "bg/warning.png"
+  File "game/splash.rpy", line 238, in <module>
+    # Make sure character files are in place
+IOError: [Errno 2] No such file or directory: u'D:\\PleaseKillMe\\holocaust adventure/characters/monika.chr'
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "renpy/common/_layout/screen_main_menu.rpym", line 28, in script
-    python hide:
+  File "game/splash.rpy", line 234, in script
+    #image tos = "bg/warning.png"
   File "C:\Users\DEV\Desktop\renpy-7.2.2-sdk\renpy\ast.py", line 900, in execute
     renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
   File "C:\Users\DEV\Desktop\renpy-7.2.2-sdk\renpy\python.py", line 1930, in py_exec_bytecode
     exec bytecode in globals, locals
-  File "renpy/common/_layout/screen_main_menu.rpym", line 28, in <module>
-    python hide:
-  File "renpy/common/_layout/screen_main_menu.rpym", line 35, in _execute_python_hide
-    ui.interact()
-  File "C:\Users\DEV\Desktop\renpy-7.2.2-sdk\renpy\ui.py", line 289, in interact
-    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
-  File "C:\Users\DEV\Desktop\renpy-7.2.2-sdk\renpy\display\core.py", line 2690, in interact
-    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, **kwargs)
-  File "C:\Users\DEV\Desktop\renpy-7.2.2-sdk\renpy\display\core.py", line 3174, in interact_core
-    self.draw_screen(root_widget, fullscreen_video, (not fullscreen_video) or video_frame_drawn)
-  File "C:\Users\DEV\Desktop\renpy-7.2.2-sdk\renpy\display\core.py", line 2086, in draw_screen
-    renpy.config.screen_height,
-  File "render.pyx", line 516, in renpy.display.render.render_screen
-  File "render.pyx", line 244, in renpy.display.render.render
-  File "C:\Users\DEV\Desktop\renpy-7.2.2-sdk\renpy\display\layout.py", line 722, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 151, in renpy.display.render.render
-  File "render.pyx", line 244, in renpy.display.render.render
-  File "C:\Users\DEV\Desktop\renpy-7.2.2-sdk\renpy\display\layout.py", line 722, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 151, in renpy.display.render.render
-  File "render.pyx", line 244, in renpy.display.render.render
-  File "C:\Users\DEV\Desktop\renpy-7.2.2-sdk\renpy\display\layout.py", line 722, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 151, in renpy.display.render.render
-  File "render.pyx", line 244, in renpy.display.render.render
-  File "C:\Users\DEV\Desktop\renpy-7.2.2-sdk\renpy\display\screen.py", line 669, in render
-    child = renpy.display.render.render(self.child, w, h, st, at)
-  File "render.pyx", line 151, in renpy.display.render.render
-  File "render.pyx", line 244, in renpy.display.render.render
-  File "C:\Users\DEV\Desktop\renpy-7.2.2-sdk\renpy\display\layout.py", line 722, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 151, in renpy.display.render.render
-  File "render.pyx", line 244, in renpy.display.render.render
-  File "C:\Users\DEV\Desktop\renpy-7.2.2-sdk\renpy\display\layout.py", line 925, in render
-    surf = render(d, width - x, rh, cst, cat)
-  File "render.pyx", line 151, in renpy.display.render.render
-  File "render.pyx", line 244, in renpy.display.render.render
-  File "C:\Users\DEV\Desktop\renpy-7.2.2-sdk\renpy\display\behavior.py", line 740, in render
-    rv = super(Button, self).render(width, height, st, at)
-  File "C:\Users\DEV\Desktop\renpy-7.2.2-sdk\renpy\display\layout.py", line 1097, in render
-    xminimum = max(xminimum, size_groups[size_group].width(width, height, st, at))
-  File "C:\Users\DEV\Desktop\renpy-7.2.2-sdk\renpy\display\layout.py", line 1041, in width
-    rend = i.render(width, height, st, at)
-  File "C:\Users\DEV\Desktop\renpy-7.2.2-sdk\renpy\display\behavior.py", line 740, in render
-    rv = super(Button, self).render(width, height, st, at)
-  File "C:\Users\DEV\Desktop\renpy-7.2.2-sdk\renpy\display\layout.py", line 1124, in render
-    st, at)
-  File "render.pyx", line 151, in renpy.display.render.render
-  File "render.pyx", line 244, in renpy.display.render.render
-  File "C:\Users\DEV\Desktop\renpy-7.2.2-sdk\renpy\text\text.py", line 1989, in render
-    virtual_layout = Layout(self, width, height, renders, drawable_res=False, size_only=True)
-  File "C:\Users\DEV\Desktop\renpy-7.2.2-sdk\renpy\text\text.py", line 619, in __init__
-    glyphs = ts.glyphs(s, self)
-  File "C:\Users\DEV\Desktop\renpy-7.2.2-sdk\renpy\text\text.py", line 242, in glyphs
-    fo = font.get_font(self.font, self.size, self.bold, self.italic, 0, self.antialias, self.vertical, self.hinting, layout.oversample)
-  File "C:\Users\DEV\Desktop\renpy-7.2.2-sdk\renpy\text\font.py", line 695, in get_font
-    face = load_face(fn)
-  File "C:\Users\DEV\Desktop\renpy-7.2.2-sdk\renpy\text\font.py", line 611, in load_face
-    font_file = renpy.loader.load(fn)
-  File "C:\Users\DEV\Desktop\renpy-7.2.2-sdk\renpy\loader.py", line 567, in load
-    raise Exception("Backslash in filename, use '/' instead: %r" % name)
-Exception: Backslash in filename, use '/' instead: u'\x0conts\\ComicSans.ttf'
+  File "game/splash.rpy", line 238, in <module>
+    # Make sure character files are in place
+IOError: [Errno 2] No such file or directory: u'D:\\PleaseKillMe\\holocaust adventure/characters/monika.chr'
 
 Windows-8-6.2.9200
 Ren'Py 7.2.2.491
-WipeOut.exe 1.0
-Tue Jun 11 05:09:50 2019
+WipeOut.exe 1.2
+Tue Jun 11 10:23:31 2019

@@ -55,7 +55,7 @@ define gui.interface_text_color = '#ffffff'
 ## Fonts and Font Sizes ########################################################
 
 ## The font used for in-game text.
-define gui.text_font = "/fonts/ComicSans.ttf" 
+define gui.text_font = "/fonts/ComicSans.ttf"
 
 ## The font used for character names.
 define gui.name_text_font = "DejaVuSans.ttf"
@@ -99,7 +99,7 @@ define gui.textbox_height = 278
 
 ## The placement of the textbox vertically on the screen. 0.0 is the top, 0.5 is
 ## center, and 1.0 is the bottom.
-define gui.textbox_yalign = 1.0
+define gui.textbox_yalign = 1.2
 
 
 ## The placement of the speaking character's name, relative to the textbox.
