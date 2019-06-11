@@ -37,7 +37,7 @@ define gui.about = _p("""
 ## distribution. This must be ASCII-only, and must not contain spaces, colons,
 ## or semicolons.
 
-define build.name = "holocaustadventure"
+define build.name = "wipeout"
 
 
 ## Sounds and music ############################################################
@@ -61,7 +61,7 @@ define config.has_voice = True
 ## the player is at the main menu. This file will continue playing into the
 ## game, until it is stopped or another file is played.
 
-# define config.main_menu_music = "audio\main-menu-theme.ogg"
+define config.main_menu_music = "audio/theme-song.mp3"
 
 
 ## Transitions #################################################################
