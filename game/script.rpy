@@ -15,7 +15,7 @@ label splashscreen:
     scene black
     with Pause(1)
 
-    show text "American Bishoujo Presents..." with dissolve
+    show text "Tibthink Studios Presents..." with dissolve
     with Pause(2)
 
     hide text with dissolve
