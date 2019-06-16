@@ -11,17 +11,55 @@ define e2 = Character("Elie")
 
 # The game starts here.
 
+# label splashscreen:
+#     scene black
+#     with Pause(1)
+#
+#     show text "Tibthink Productions Presents..." with dissolve
+#     with Pause(2)
+#
+#     hide text with dissolve
+#     with Pause(1)
+#
+#     return
+
+
+image black = "#000"
+image white = "#ffffff"
+image logo = "images/logo/icon-left-font-monochrome-black.png"
+
+transform transform_logo:
+    on show:
+        alpha 0 xalign 0.5 yalign 0.5
+        linear 2.0 alpha 1
+    on hide:
+        linear 2.0 alpha 0
+
+transform transform_white:
+    on show:
+        alpha 0
+        linear 2.0 alpha 1
+    on hide:
+        linear 2.0 alpha 0
+
 label splashscreen:
     scene black
-    with Pause(1)
+    $ renpy.pause(1, hard=True)
 
-    show text "Tibthink Productions Presents..." with dissolve
-    with Pause(2)
+    show white at transform_white
+    $ renpy.pause(2, hard=True)
 
-    hide text with dissolve
-    with Pause(1)
+    show logo at transform_logo
+    $ renpy.pause(6, hard=True)
+
+    hide logo
+    $ renpy.pause(2, hard=True)
+
+    hide white
+    $ renpy.pause(3, hard=True)
 
     return
+
 
 label start:
 

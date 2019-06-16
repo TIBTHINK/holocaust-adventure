@@ -30,6 +30,13 @@ define config.version = "1.2"
 ## triple-quotes, and leave a blank line between paragraphs.
 
 define gui.about = _p("""
+This game will send you to hell instantly if you are a fucking pussy please turn back now
+
+
+this game was made from a really really bad suggestion
+(thanks ben) and was orginaly made in java as a texted based game.... then i realized that renpy is the game
+engine perfect for this job (and after watching game grumps lets play of DDLC) i needed to ask a few friends
+for the art work and the script
 """)
 
 
@@ -47,7 +54,7 @@ define build.name = "wipeout"
 
 define config.has_sound = True
 define config.has_music = True
-define config.has_voice = True
+define config.has_voice = False
 
 
 ## To allow the user to play a test sound on the sound or voice channel,
@@ -88,7 +95,7 @@ define config.after_load_transition = None
 
 ## Used when entering the main menu after the game has ended.
 
-define config.end_game_transition = None
+define config.end_game_transition = dissolve
 
 
 ## A variable to set the transition used when the game starts does not exist.
@@ -149,7 +156,7 @@ define config.save_directory = "holocaustadventure-1560213428"
 ##
 ## The icon displayed on the taskbar or dock.
 
-define config.window_icon = "gui/window_icon.png"
+define config.window_icon = "images/Assets/window-log.png"
 
 
 ## Build configuration #########################################################
