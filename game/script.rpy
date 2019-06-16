@@ -58,7 +58,18 @@ label splashscreen:
     hide white
     $ renpy.pause(3, hard=True)
 
+    with Pause(1)
+
+    show text "Warning: \n Tibthink does not give two shits about what you think and what you believe.\n If you can not take a joke please read the word below. \n FUCK YOU"
+    with Pause(7)
+
+    hide text with dissolve
+    with Pause(1)
+
     return
+
+label disclaimer:
+
 
 
 label start:

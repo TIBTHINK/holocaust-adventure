@@ -1,22 +1,22 @@
-Sat Jun 15 23:24:08 2019
+Sun Jun 16 00:10:04 2019
 Windows-8-6.2.9200
 Ren'Py 7.2.2.491
  
 
-Bootstrap to the start of init.init took 0.07s
-Early init took 0.00s
+Bootstrap to the start of init.init took 0.08s
+Early init took 0.01s
 Loader init took 0.02s
 Loading error handling took 0.02s
-Loading script took 0.17s
+Loading script took 0.19s
 Loading save slot metadata. took 0.01s
 Loading persistent took 0.00s
 Importing _renpysteam: ImportError('No module named _renpysteam',)
-Running init code took 0.08s
+Running init code took 0.09s
 Loading analysis data took 0.04s
 Analyze and compile ATL took 0.00s
 Index archives took 0.00s
 Backing up script files to 'C:\\Users\\DEV\\AppData\\Roaming/RenPy/backups\\holocaust adventure':
-Dump and make backups. took 0.09s
+Dump and make backups. took 0.08s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
 Initial gc. took 0.02s
@@ -28,12 +28,12 @@ Build styles took 0.01s
 Load screen analysis took 0.00s
 Analyze screens took 0.02s
 Save screen analysis took 0.08s
-Prepare screens took 0.06s
+Prepare screens took 0.07s
 Save pyanalysis. took 0.00s
 Save bytecode. took 0.07s
 Running _start took 0.00s
 Performance test:
-Interface start took 0.04s
+Interface start took 0.03s
 Couldn't import angle renderer:
 Traceback (most recent call last):
   File "C:\Users\DEV\Desktop\renpy-7.2.2-sdk\renpy\display\core.py", line 1930, in make_draw
@@ -262,11 +262,11 @@ Texture testing:
 - 512px textures work.
 - 1024px textures work.
 - 2048px textures work.
-Total time until interface ready: 1.51200008392s
+Total time until interface ready: 1.65799999237s
 - Target is 5 frames in 0.333333333333 seconds.
 - Frame drawn at 0.000000 seconds.
-- Frame drawn at 0.020949 seconds.
-- Frame drawn at 0.041949 seconds.
-- Frame drawn at 0.066949 seconds.
-- Frame drawn at 0.081949 seconds.
-- 0.081949 seconds to render 5 frames.
+- Frame drawn at 0.018000 seconds.
+- Frame drawn at 0.037000 seconds.
+- Frame drawn at 0.052000 seconds.
+- Frame drawn at 0.069000 seconds.
+- 0.069000 seconds to render 5 frames.

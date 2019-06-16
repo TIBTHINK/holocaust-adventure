@@ -2,10 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/gui.rpy", line 14: unexpected indent
-        text with dissolve
-        ^
-    
+File "game/script.rpy", line 63: multiple at clauses are prohibited.
+    show text "Warning: \n JQuartz is not responsible for any laziness that may result from using main menu generator. JQuartz is also protected from being held responsible for global warming that may result from using too much computer. Please be advised." at Position(xpos=.5, ypos=.2) at Position(xpos=.5, xanchor=.5, ypos=.5, yanchor=.5) 
+                                                                                                                                                                                                                                                                                                  ^
 
 Ren'Py Version: Ren'Py 7.2.2.491
-Tue Jun 11 09:35:46 2019
+Sat Jun 15 23:54:19 2019
