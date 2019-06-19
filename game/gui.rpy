@@ -23,7 +23,7 @@ init python:
 ## The colors of text in the interface.
 
 ## An accent color used throughout the interface to label and highlight text.
-define gui.accent_color = '#0066cc'
+define gui.accent_color = '#0099cc'
 
 ## The color used for a text button when it is neither selected nor hovered.
 define gui.idle_color = '#888888'
@@ -33,7 +33,7 @@ define gui.idle_color = '#888888'
 define gui.idle_small_color = '#aaaaaa'
 
 ## The color that is used for buttons and bars that are hovered.
-define gui.hover_color = '#66a3e0'
+define gui.hover_color = '#66c1e0'
 
 ## The color used for a text button when it is selected but not focused. A
 ## button is selected if it is the current screen or preference value.
@@ -44,8 +44,8 @@ define gui.insensitive_color = '#8888887f'
 
 ## Colors used for the portions of bars that are not filled in. These are not
 ## used directly, but are used when re-generating bar image files.
-define gui.muted_color = '#002851'
-define gui.hover_muted_color = '#003d7a'
+define gui.muted_color = '#003d51'
+define gui.hover_muted_color = '#005b7a'
 
 ## The colors used for dialogue and menu choice text.
 define gui.text_color = '#ffffff'
@@ -55,13 +55,13 @@ define gui.interface_text_color = '#ffffff'
 ## Fonts and Font Sizes ########################################################
 
 ## The font used for in-game text.
-define gui.text_font = "/fonts/ComicSans.ttf"
+define gui.text_font = "DejaVuSans.ttf"
 
 ## The font used for character names.
-define gui.name_text_font = "DejaVuSans.ttf"
+define gui.name_text_font = "fonts/ComicSans.ttf"
 
 ## The font used for out-of-game text.
-define gui.interface_text_font = "/fonts/ComicSans.ttf"
+define gui.interface_text_font = "DejaVuSans.ttf"
 
 ## The size of normal dialogue text.
 define gui.text_size = 33
@@ -86,7 +86,7 @@ define gui.title_text_size = 75
 
 ## The images used for the main and game menus.
 define gui.main_menu_background = "images/Assets/main-menu-image.png"
-define gui.game_menu_background = "gui/game_menu.png"
+define gui.game_menu_background = "gui/main_menu.png"
 
 
 ## Dialogue ####################################################################
@@ -99,7 +99,7 @@ define gui.textbox_height = 278
 
 ## The placement of the textbox vertically on the screen. 0.0 is the top, 0.5 is
 ## center, and 1.0 is the bottom.
-define gui.textbox_yalign = 1.2
+define gui.textbox_yalign = 1.0
 
 
 ## The placement of the speaking character's name, relative to the textbox.
@@ -469,3 +469,6 @@ init python:
 
         gui.nvl_button_width = 1860
         gui.nvl_button_xpos = 30
+
+
+

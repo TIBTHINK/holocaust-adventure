@@ -1,22 +1,80 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 97, in script
-    jump therisag
-ScriptError: could not find label 'therisag'.
+  File "game/script.rpy", line 74, in script
+    e "is there a god"
+Exception: Could not find font u'game/fonts/ComicSans.ttf'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 97, in script
-    jump therisag
-  File "C:\Users\bent2\Desktop\renpy-7.2.2-sdk\renpy\ast.py", line 1692, in execute
-    rv = renpy.game.script.lookup(target)
-  File "C:\Users\bent2\Desktop\renpy-7.2.2-sdk\renpy\script.py", line 894, in lookup
-    raise ScriptError("could not find label '%s'." % str(original))
-ScriptError: could not find label 'therisag'.
+  File "game/script.rpy", line 74, in script
+    e "is there a god"
+  File "C:\Users\bent2\Desktop\renpy-7.2.2-sdk\renpy\ast.py", line 704, in execute
+    renpy.exports.say(who, what, *args, **kwargs)
+  File "C:\Users\bent2\Desktop\renpy-7.2.2-sdk\renpy\exports.py", line 1330, in say
+    who(what, *args, **kwargs)
+  File "C:\Users\bent2\Desktop\renpy-7.2.2-sdk\renpy\character.py", line 1139, in __call__
+    self.do_display(who, what, cb_args=self.cb_args, **display_args)
+  File "C:\Users\bent2\Desktop\renpy-7.2.2-sdk\renpy\character.py", line 842, in do_display
+    **display_args)
+  File "C:\Users\bent2\Desktop\renpy-7.2.2-sdk\renpy\character.py", line 591, in display_say
+    rv = renpy.ui.interact(mouse='say', type=type, roll_forward=roll_forward)
+  File "C:\Users\bent2\Desktop\renpy-7.2.2-sdk\renpy\ui.py", line 289, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "C:\Users\bent2\Desktop\renpy-7.2.2-sdk\renpy\display\core.py", line 2694, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, **kwargs)
+  File "C:\Users\bent2\Desktop\renpy-7.2.2-sdk\renpy\display\core.py", line 3186, in interact_core
+    self.draw_screen(root_widget, fullscreen_video, (not fullscreen_video) or video_frame_drawn)
+  File "C:\Users\bent2\Desktop\renpy-7.2.2-sdk\renpy\display\core.py", line 2086, in draw_screen
+    renpy.config.screen_height,
+  File "render.pyx", line 524, in renpy.display.render.render_screen
+  File "render.pyx", line 247, in renpy.display.render.render
+  File "C:\Users\bent2\Desktop\renpy-7.2.2-sdk\renpy\display\layout.py", line 722, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 154, in renpy.display.render.render
+  File "render.pyx", line 247, in renpy.display.render.render
+  File "C:\Users\bent2\Desktop\renpy-7.2.2-sdk\renpy\display\layout.py", line 722, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 154, in renpy.display.render.render
+  File "render.pyx", line 247, in renpy.display.render.render
+  File "C:\Users\bent2\Desktop\renpy-7.2.2-sdk\renpy\display\layout.py", line 722, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 154, in renpy.display.render.render
+  File "render.pyx", line 247, in renpy.display.render.render
+  File "C:\Users\bent2\Desktop\renpy-7.2.2-sdk\renpy\display\screen.py", line 675, in render
+    child = renpy.display.render.render(self.child, w, h, st, at)
+  File "render.pyx", line 154, in renpy.display.render.render
+  File "render.pyx", line 247, in renpy.display.render.render
+  File "C:\Users\bent2\Desktop\renpy-7.2.2-sdk\renpy\display\layout.py", line 722, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 154, in renpy.display.render.render
+  File "render.pyx", line 247, in renpy.display.render.render
+  File "C:\Users\bent2\Desktop\renpy-7.2.2-sdk\renpy\display\layout.py", line 1124, in render
+    st, at)
+  File "render.pyx", line 154, in renpy.display.render.render
+  File "render.pyx", line 247, in renpy.display.render.render
+  File "C:\Users\bent2\Desktop\renpy-7.2.2-sdk\renpy\display\layout.py", line 722, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 154, in renpy.display.render.render
+  File "render.pyx", line 247, in renpy.display.render.render
+  File "C:\Users\bent2\Desktop\renpy-7.2.2-sdk\renpy\display\layout.py", line 1124, in render
+    st, at)
+  File "render.pyx", line 154, in renpy.display.render.render
+  File "render.pyx", line 247, in renpy.display.render.render
+  File "C:\Users\bent2\Desktop\renpy-7.2.2-sdk\renpy\text\text.py", line 1989, in render
+    virtual_layout = Layout(self, width, height, renders, drawable_res=False, size_only=True)
+  File "C:\Users\bent2\Desktop\renpy-7.2.2-sdk\renpy\text\text.py", line 619, in __init__
+    glyphs = ts.glyphs(s, self)
+  File "C:\Users\bent2\Desktop\renpy-7.2.2-sdk\renpy\text\text.py", line 242, in glyphs
+    fo = font.get_font(self.font, self.size, self.bold, self.italic, 0, self.antialias, self.vertical, self.hinting, layout.oversample)
+  File "C:\Users\bent2\Desktop\renpy-7.2.2-sdk\renpy\text\font.py", line 699, in get_font
+    face = load_face(fn)
+  File "C:\Users\bent2\Desktop\renpy-7.2.2-sdk\renpy\text\font.py", line 640, in load_face
+    raise Exception("Could not find font {0!r}.".format(orig_fn))
+Exception: Could not find font u'game/fonts/ComicSans.ttf'.
 
 Windows-8-6.2.9200
 Ren'Py 7.3.0.219
 WipeOut.exe 1.2
-Tue Jun 18 22:09:31 2019
+Wed Jun 19 13:42:59 2019
