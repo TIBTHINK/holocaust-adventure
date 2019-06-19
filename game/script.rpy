@@ -1,27 +1,8 @@
-# The script of the game goes in this file.
-
-# Declare characters used by this game. The color argument colorizes the
-# name of the character.
-
 define e = Character("A dirty jew")
 define g = Character("Guard")
 define e1 = Character("A-7713")
 define e2 = Character("Elie")
 
-
-# The game starts here.
-
-# label splashscreen:
-#     scene black
-#     with Pause(1)
-#
-#     show text "Tibthink Productions Presents..." with dissolve
-#     with Pause(2)
-#
-#     hide text with dissolve
-#     with Pause(1)
-#
-#     return
 
 
 image black = "#000"
@@ -100,7 +81,6 @@ label start:
 
     label thereisag:
         e1 "you are dumber than the last player then"
-        call credits
         call splashscreen
         return
 
