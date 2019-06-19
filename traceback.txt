@@ -1,44 +1,22 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-IOError: Couldn't find file 'opening.ogv'.
+  File "game/script.rpy", line 97, in script
+    jump therisag
+ScriptError: could not find label 'therisag'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "renpy/common/_layout/screen_main_menu.rpym", line 28, in script
-    python hide:
-  File "C:\Users\DEV\Desktop\renpy-7.2.2-sdk\renpy\ast.py", line 900, in execute
-    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
-  File "C:\Users\DEV\Desktop\renpy-7.2.2-sdk\renpy\python.py", line 1930, in py_exec_bytecode
-    exec bytecode in globals, locals
-  File "renpy/common/_layout/screen_main_menu.rpym", line 28, in <module>
-    python hide:
-  File "renpy/common/_layout/screen_main_menu.rpym", line 35, in _execute_python_hide
-    ui.interact()
-  File "C:\Users\DEV\Desktop\renpy-7.2.2-sdk\renpy\ui.py", line 289, in interact
-    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
-  File "C:\Users\DEV\Desktop\renpy-7.2.2-sdk\renpy\display\core.py", line 2690, in interact
-    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, **kwargs)
-  File "C:\Users\DEV\Desktop\renpy-7.2.2-sdk\renpy\display\core.py", line 3110, in interact_core
-    renpy.audio.audio.interact()
-  File "C:\Users\DEV\Desktop\renpy-7.2.2-sdk\renpy\audio\audio.py", line 1066, in interact
-    periodic()
-  File "C:\Users\DEV\Desktop\renpy-7.2.2-sdk\renpy\audio\audio.py", line 1019, in periodic
-    six.reraise(exc[0], exc[1], exc[2])
-  File "C:\Users\DEV\Desktop\renpy-7.2.2-sdk\renpy\audio\audio.py", line 997, in periodic_thread_main
-    periodic_pass()
-  File "C:\Users\DEV\Desktop\renpy-7.2.2-sdk\renpy\audio\audio.py", line 938, in periodic_pass
-    c.periodic()
-  File "C:\Users\DEV\Desktop\renpy-7.2.2-sdk\renpy\audio\audio.py", line 420, in periodic
-    topf = load(self.file_prefix + filename + self.file_suffix)
-  File "C:\Users\DEV\Desktop\renpy-7.2.2-sdk\renpy\audio\audio.py", line 72, in load
-    rv = renpy.loader.load(fn)
-  File "C:\Users\DEV\Desktop\renpy-7.2.2-sdk\renpy\loader.py", line 576, in load
-    raise IOError("Couldn't find file '%s'." % name)
-IOError: Couldn't find file 'opening.ogv'.
+  File "game/script.rpy", line 97, in script
+    jump therisag
+  File "C:\Users\bent2\Desktop\renpy-7.2.2-sdk\renpy\ast.py", line 1692, in execute
+    rv = renpy.game.script.lookup(target)
+  File "C:\Users\bent2\Desktop\renpy-7.2.2-sdk\renpy\script.py", line 894, in lookup
+    raise ScriptError("could not find label '%s'." % str(original))
+ScriptError: could not find label 'therisag'.
 
 Windows-8-6.2.9200
-Ren'Py 7.2.2.491
+Ren'Py 7.3.0.219
 WipeOut.exe 1.2
-Sat Jun 15 23:23:32 2019
+Tue Jun 18 22:09:31 2019
