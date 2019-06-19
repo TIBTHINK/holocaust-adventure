@@ -80,7 +80,7 @@ label start:
             jump thereisnog
 
     label thereisag:
-        e1 "you are dumber than the last player then"
+        e1 "you are weaker than the last player"
         call splashscreen
         return
 
@@ -125,7 +125,7 @@ init python:
     credits_s += "\n{size=40}Engine\n{size=60}Ren'py\n7.3.0.271" #Don't forget to set this to your Ren'py version
     
 init:
-#    image cred = Text(credits_s, font="myfont.ttf", text_align=0.5) #use this if you want to use special fonts
-    image cred = Text(credits_s, text_align=0.5)
+    image cred = Text(credits_s, font="fonts/SwankyandMooMoo.ttf", text_align=0.5)
+#    image cred = Text(credits_s, text_align=0.5)
     image theend = Text("{size=80}Fin", text_align=0.5)
     image thanks = Text("{size=80}Thanks for Playing!", text_align=0.5)

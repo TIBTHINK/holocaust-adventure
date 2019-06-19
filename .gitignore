@@ -1,0 +1,8 @@
+*.rpyc
+*.rpyb
+*.rpymc
+*.pyc
+*.pyo
+
+saves
+cache 
