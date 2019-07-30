@@ -114,7 +114,7 @@ label credits:
     return
 
 init python:
-    credits = ('Backgrounds', 'Tibthink'), ('Backgrounds', 'Google'), ('Sprites and CG', 'Kirbyhatesyou'), ('Writing', 'Interactive_darkness'), ('Programming', 'Tibthink'), ('Music', 'Youtube'), ('Suggested by: ','Ben.x14'), ('Suggested by: ', 'You honest to goodness cunt')
+    credits = ('Backgrounds', 'Tibthink'), ('Backgrounds', 'Google'), ('Sprites and CG', 'Kirbyhatesyou'), ('Writing', 'playfox_d.a.t'), ('Programming', 'Tibthink'), ('Music', 'Youtube'), ('Suggested by: ','Ben.x14'), ('Suggested by: ', 'You honest to goodness cunt')
     credits_s = "{size=80}Credits\n\n"
     c1 = ''
     for c in credits:
