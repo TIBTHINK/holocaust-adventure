@@ -1,8 +1,13 @@
+import math
+from random import randint
+
+hello = randint(1, 4999)
+
 define e = Character("A dirty jew")
 define g = Character("Guard")
 define e1 = Character("A-7713")
 define e2 = Character("Elie")
-
+define z8 = Character("cards " hello)
 
 
 image black = "#000"
